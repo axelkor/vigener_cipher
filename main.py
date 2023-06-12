@@ -47,7 +47,7 @@ class VigenereCipher():
                 if c - d < 0:
                     word = word + self.alphabet[c - d + len(self.alphabet)]
                 else:
-                    word = word + self.alphabet[c - d]
+                    word = word + self.alphabet[c    - d]
             else:
                 if text[i].lower() in self.alphabet:
                     c = self.alphabet.index(text[i].lower())
